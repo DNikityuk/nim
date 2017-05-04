@@ -4,15 +4,14 @@ using UnityEngine.UI;
 
 public class MenuView : MonoBehaviour {
     
-    public Canvas modeGame;
+    public Canvas gameProperties;
 
-    void Start() {        
-        modeGame.GetComponent<Canvas>().enabled = false;
+    void Start() {
+        gameProperties.GetComponent<Canvas>().enabled = false;
     }
 
 	public void ratingGameClick() {
-        modeGame.GetComponent<Canvas>().enabled = true;
-        //gameProperties.GetComponent<Canvas>().enabled = true;
+       gameProperties.GetComponent<Canvas>().enabled = true;
     }
 
 
